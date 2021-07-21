@@ -5,7 +5,7 @@
 For use with CSS3 Foundations: Styling the Modern Web
 CSS3 Foundations Book: www.wiley.com/go/treehouse/css3foundations
 
-Project Files: 02-00
+Project Files: 13-00
 
 -->
 
@@ -13,6 +13,9 @@ Project Files: 02-00
     <head>
         <meta charset="utf-8" />
         <title>Cool Shoes &amp; Socks</title>
+        <link 
+            href='http://fonts.googleapis.com/css?family=Average|Belgrano' 
+            rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/styles.css" type="text/css" media="all" />
         <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
@@ -29,14 +32,27 @@ Project Files: 02-00
                 <ul>
                     <li>
                         <a href="#" title="Return to the front page">Home</a>
-                    </li>
-                    <li>
+                    </li><li>
                         <a href="#" title="About Company Name">About</a>
-                    </li>
-                    <li class="products">
+                    </li><li class="products">
                         <a href="#" title="Visit our shop">Shop</a>
-                    </li>
-                    <li>
+                        <ul>
+                            <li><a href="#" title="">Trainers</a>
+                                <ul>
+                                    <li><a href="#" title="">Womens</a></li>
+                                    <li><a href="#" title="">Mens</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" title="">Shoes</a>
+                                <ul>
+                                    <li><a href="#" title="">Womens</a></li>
+                                    <li><a href="#" title="">Mens</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" title="">Slippers</a></li>
+                            <li><a href="#" title="">Socks</a></li>
+                        </ul>
+                    </li><li>
                         <a href="#" title="Contact us">Contact</a>
                     </li>
                 </ul>
@@ -44,13 +60,25 @@ Project Files: 02-00
         </header>
         
         <div class="showcase">
-            <img src="images/banner-trainers.jpg" alt="Some of our cool trainers" />
+            <ul>
+                <li>
+                    <img src="images/banner-trainers.jpg" alt="Some of our cool trainers" />
+                </li>
+                <li>
+                    <img src="images/banner-shoes.jpg" alt="Some of our cool shoes" />
+                </li>
+                <li>
+                    <img src="images/banner-socks.jpg" alt="Some of our cool socks" />
+                </li>
+                
+            </ul>
             <a class="button purchase" href="#" title="Purchase product">
                 More Information
             </a>
         </div>
         
         <div id="main" class="group">
+            <div class="temp"></div>
             <div id="content" role="main">
                 <h1>Page Title</h1>
                 <p>Nulla facilisi. Ut porttitor sollicitudin nisi, tempus pulvinar nisl volutpat aliquet. Phasellus posuere auctor accumsan. Ut in odio eget dui pulvinar sollicitudin. Sed vitae tortor nibh. Aenean nec sapien quam, sit amet dapibus lorem. Phasellus ac pharetra tellus. Curabitur pretium eros sit amet nisl pretium mollis.</p>
@@ -115,5 +143,6 @@ Project Files: 02-00
                 </li>
             </ul>
         </footer>
+        <div class="banner-ad"><span>25% Off</span>All Purchases</div>
     </body>
 </html>
